@@ -1,0 +1,44 @@
+Used parameters:
+    Sampling frequency: 250Hz
+    preprocessing:
+        thd = 100.0 deg/s
+    preliminary_segment:
+        t_wind = 44000 us
+        t_overlap = 12000 us
+        eta_p = 0.01 (p-value treshold)
+    extract_sp:
+        t_min = 32000
+        eta_D = 0.45
+        eta_CD = 0.5
+        eta_PD = 0.2
+        eta_maxFix = 1.9
+        eta_minSmp = 1.1
+        phi = 45
+
+Default parameters (from [1]):
+    Sampling frequency: 500Hz
+    preprocessing:
+        thd = 100.0 deg/s
+    preliminary_segment:
+        t_wind = 22000 us
+        t_overlap = 6000 us
+        eta_p = 0.01 (p-value treshold)
+    extract_sp:
+        t_min = 40 ms
+        eta_D = 0.45
+        eta_CD = 0.5
+        eta_PD = 0.2
+        eta_maxFix = 1.9
+        eta_minSmp = 1.7
+        phi = pi/4
+
+
+[1] @article{larsson2015detection,
+        title={Detection of fixations and smooth pursuit movements in high-speed eye-tracking data},
+        author={Larsson, Linn{\'e}a and Nystr{\"o}m, Marcus and Andersson, Richard and Stridh, Martin},
+        journal={Biomedical Signal Processing and Control},
+        volume={18},
+        pages={145--152},
+        year={2015},
+        publisher={Elsevier}
+    }

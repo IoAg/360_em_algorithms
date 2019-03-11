@@ -1,0 +1,9 @@
+tolerance=0.1
+thresholdOnsetFast=160
+thresholdOnsetSlow=70
+thresholdOffset=60
+maxSpeed=1031.25
+minDuration=15000
+maxDuration=200000
+velIntegrationInterv=4000
+minConfidence=0.25

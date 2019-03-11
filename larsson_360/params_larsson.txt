@@ -1,0 +1,12 @@
+preprocessVelThres=100.0
+t_window=44000 
+t_overlap=12000
+eta_p=0.01
+t_min=32000
+eta_d=0.45
+eta_cd=0.5
+eta_pd=0.2
+eta_maxFix=1.9
+eta_minSmp=1.1
+phi=45
+minConfidence=0.75

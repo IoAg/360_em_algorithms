@@ -1,0 +1,6 @@
+minFixationDur=100000
+maxDistanceDeg=0.55
+velThresholdDegSec=5
+intersaccadicDist=20.0
+intersaccadicLength=500000
+minConfidence=0.25
