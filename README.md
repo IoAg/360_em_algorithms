@@ -73,14 +73,15 @@ comprises of a column vector with integer when an eye movement is detected.
 
 A more detailed explanation of the input arguments is given below
 
-| Input arguments | Use | 
+| Input arguments | Use |
 | --------- | -------- |
 | arffFile | ARFF file to process |
 | outFile | file name to store result |
 | outputAtt | name of the attribute in the output ARFF that holds detected eye movements |
 | attValues | nominal values of the added attributes as returned from eye movement detection algorithm. They are a string in the form '{unassigned, fixation}' if the detection algorithm returns 0 for unassigned and 1 for fixations |
 | detFuncName | detection function name as string. Ex. 'DetectSaccadesIVVT' |
-| varargin | required extra arguments for calling the detection function. The data, metadata, attributes are passed to the detection function by default in this order followed by the varargin arguments | 
+| varargin | required extra arguments for calling the detection function. The data, metadata, attributes are passed to the detection function by default in this order followed by the varargin arguments |
+
 
 The list of used files for data reprojection is given below
 
