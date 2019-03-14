@@ -158,7 +158,7 @@ that describe the headset properties.
 Author: Ioannis Agtzidis
 Contact: ioannis.agtzidis@tum.de
 
-If you use either this Larsson algorithm re-implementation for 360-degree equirectangular stimuli, please cite:
+If you use any algorithm re-implementation for 360-degree equirectangular stimuli, please cite:
 
 
 > \@inproceedings{agtzidis2019conversion, <br/>
