@@ -8,10 +8,10 @@ the original algorithms that were developed for monitor based experiments.
 ## 1. CONTENT
 
 Before starting using the provided algorithms of this repository you should
-first clone (or download) the repository that offers utilities that allow as to
-handle ARFF files from [here](https://github.com/IoAg/matlab_utils). We also
-need to clone the repository that offers utilities for handling 360-degree
-utilities from [here](https://github.com/IoAg/matlab_360_utils). Then add the 
+first clone (or download) the *matlab_utils* repository that offers utilities 
+for mainly handling ARFF files from [here](https://web.gin.g-node.org/ioannis.agtzidis/matlab_utils). We also
+need to clone the *matlab_360_utils* repository that offers utilities for handling 360-degree
+data from [here](https://web.gin.g-node.org/ioannis.agtzidis/matlab_360_utils). Then add the 
 previous folders to the search path of Matlab with the *pathtool* or *addpath*
 commands.
 
@@ -103,9 +103,16 @@ plain gaze recordings. We also make use of the "%@METADATA" special comments
 which describe the field of view of the used headset. Apart from the default
 metadata *width_px, height_px, distance_mm, width_mm, height_mm* we also use
 the extra metadata *fov_width_px, fov_width_deg, fov_height_px, fov_height_deg* 
-that describe the headset properties. 
+that describe the headset properties.
 
-### 2.1. ARFF example
+The "@attribute" *x* and *y* represent the gaze coordinates in the
+equirectangular space (i.e. the head and eye position together). The
+*x_head* and *y_head* attributes represent head coordinates in the
+equirectangular space. The *angle_deg_head* attribute is equivalent to the roll
+principal axis.
+
+
+### 2.1 ARFF Example
 
 ```
 @RELATION gaze_360
@@ -152,6 +159,17 @@ that describe the headset properties.
 129000,956.00,537.00,1.00,960.00,540.00,1.27,saccade
 141000,948.00,530.00,1.00,960.00,540.00,1.28,saccade
 ```
+### 2.2 Recovery of HMD Pose
+
+The *x_head, y_head, angle_deg_head* allow us to recover the headset pose
+because we use 360-degree equirectangular videos and therefore exist no
+translations during video presentation. For
+understanding the process take a look at functions
+[HeadToVideoRot.m](https://web.gin.g-node.org/ioannis.agtzidis/matlab_360_utils/src/master/HeadToVideoRot.m) and
+[YZXrotation.m](https://web.gin.g-node.org/ioannis.agtzidis/matlab_360_utils/src/master/YZXrotation.m)
+in the
+[matlab_360_utils](https://web.gin.g-node.org/ioannis.agtzidis/matlab_360_utils) repository.
+
 
 ## 3. GENERAL INFORMATION
 
