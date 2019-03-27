@@ -29,7 +29,7 @@
 %                 The data, metadata, attributes are used by default in this
 %                 order followed by the varargin arguments
 
-function DataReprojDetection(arffFile, outFile, outputAtt, attValues, detFuncName, varargin)
+function DataReprojFovDetection(arffFile, outFile, outputAtt, attValues, detFuncName, varargin)
     DetectionFunction = str2func(detFuncName);
     
     [data, metadata, attributes, relation, comments] = LoadArff(arffFile);
