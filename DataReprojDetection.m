@@ -1,21 +1,21 @@
 % DataReprojDetection.m
 %
-% This function detects eye movement by reprojectinig 360-degree
-% equirectangular data and calling another eye movement detection function. It
-% woks by splitting the equirectangular input data into intervals where the
+% This function detects eye movements by reprojectinig the 360-degree
+% equirectangular data and calling an external eye movement detection function.
+% It woks by splitting the equirectangular input data into intervals where the
 % vertical spread is no more than 45 degrees. It then reprojects them around
-% the equatorial line of the sphere and creates a new ARFF that is equivalent
+% the equatorial line of the sphere and creates coordinates that are equivalent
 % to a monitor recorded experiment. Finally we can call the provided monitor
 % designed algorithm with the new ARFF object as input. The input data should
 % have the relation "gaze_360" to mark they were recorded in 360-degree
-% equirectangular.
+% equirectangular experiment.
 %
 % The eye movement detection function is provided as string in the input
 % arguments. This function should have at least 3 input variables, namely
 % data, metadata, and attributes as loaded from the LoadArff function. If the
 % provided detection function requires more input than the 3 default arguments,
-% these can be provided as extra arguments in the argument list of the
-% current function. The extra arguments are placed in the provided order after
+% these can be provided as extra arguments in the argument list of the current
+% function. The extra arguments are placed in the order that they appear after
 % the 3 default arguments in the detection function. The output of the
 % detection function should be a vector with a unique integer value for each
 % detected eye movement. These should correspond to the provided attValues
@@ -29,9 +29,8 @@
 %                 form '{unassigned, fixation, sacacde, sp, noise}'
 %   detFuncName - detection function name
 %   varargin    - required extra arguments for calling the detection function.
-%                 The data, metadata, attributes are passed to the detection
-%                 function by default in this order followed by the varargin
-%                 arguments
+%                 The data, metadata, attributes are used by default in this
+%                 order followed by the varargin arguments
 
 function DataReprojDetection(arffFile, outFile, outputAtt, attValues, detFuncName, varargin)
     DetectionFunction = str2func(detFuncName);

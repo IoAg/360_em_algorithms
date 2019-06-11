@@ -1,18 +1,18 @@
 % DataReprojFovDetection.m
 %
-% This function detects eye movement by reprojectinig the 360-degree
+% This function detects eye movements by reprojectinig the 360-degree
 % equirectangular data in the field-of-view (FOV) coordinates of the headset.
-% By doing this we disentagle the head from the eye motion. On the converted data
-% we can then call another eye movement detection function. The input data should
-% have the relation "gaze_360" to mark they were recorded in 360-degree
-% equirectangular.
+% By doing this we disentagle the head from the eye motion. On the converted
+% data we can then call an external eye movement detection function. The input
+% data should have the relation "gaze_360" to mark they were recorded in
+% 360-degree equirectangular.
 %
 % The eye movement detection function is provided as string in the input
 % arguments. This function should have at least 3 input variables, namely
 % data, metadata, and attributes as loaded from the LoadArff function. If the
 % provided detection function requires more input than the 3 default arguments,
-% these can be provided as extra arguments in the argument list of the
-% current function. The extra arguments are placed in the provided order after
+% these can be provided as extra arguments in the argument list of the current
+% function. The extra arguments are placed in the order that they appear after
 % the 3 default arguments in the detection function. The output of the
 % detection function should be a vector with a unique integer value for each
 % detected eye movement. These should correspond to the provided attValues

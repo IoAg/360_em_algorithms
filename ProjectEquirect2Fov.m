@@ -4,7 +4,6 @@
 % the FOV and returns the new data. The change is indicated throught the
 % relation name, which is set to gaze_fov.
 %
-%
 % input:
 %   data        - data from the ARFF file
 %   metadata    - metadata from the ARFF file

@@ -3,9 +3,6 @@
 % This function detects saccades from the input file and store them in the provided
 % attribute of the output file. The values of the attribute in the output 
 % file are '{unassigned, saccade}'
-
-% It tries to replicate SaccadeDetector
-% of dsf for use in matlab. So for comparison of the logic look this documentation
 %
 % input:
 %   inputfile   - ARFF file containing gaze coordinates

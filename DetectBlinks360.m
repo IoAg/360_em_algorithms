@@ -1,9 +1,10 @@
 % DetectBlinks360.m
 %
-% This function detects blinks by using intervals of noise in arff as well as
-% saccade detection. For every noise interval searches on both direction
-% (forward and backwards in time) and if it finds a saccade within a given time
-% distance it labels the noise and saccade interval as blink.
+% This function detects blinks by using intervals of noise in the provided ARFF
+% data together with saccade detection. For every noise interval searches on
+% both directions (forward and backwards in time) and if it finds a saccade
+% within a given time distance it labels the noise, the saccade interval, and
+% the samples in between as blink.
 %
 % input:
 %   data        - data from the ARFF file
