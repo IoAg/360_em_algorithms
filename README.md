@@ -180,13 +180,24 @@ If you use any algorithm re-implementation for 360-degree equirectangular stimul
 
 
 > \@inproceedings{agtzidis2019conversion, <br/>
->    title={Getting (More) Real: Bringing Eye Movement Classification to HMD Experiments with Equirectangular Stimuli}, <br/>
->    author={Agtzidis, Ioannis and Dorr, Michael}, <br/>
->    booktitle={Proceedings of the 2019 ACM Symposium on Eye Tracking Research \& Applications}, <br/>
->    pages={303--306}, <br/>
->    year={2019}, <br/>
->    organization={ACM} <br/>
-> }
+>	author = {Agtzidis, Ioannis and Dorr, Michael}, <br/>
+>	title = {Getting (More) Real: Bringing Eye Movement Classification to HMD Experiments with Equirectangular Stimuli}, <br/>
+>	booktitle = {Proceedings of the 11th ACM Symposium on Eye Tracking Research \& Applications}, <br/>
+>	series = {ETRA '19}, <br/>
+>	year = {2019}, <br/>
+>	isbn = {978-1-4503-6709-7}, <br/>
+>	location = {Denver, Colorado}, <br/>
+>	pages = {18:1--18:8}, <br/>
+>	articleno = {18}, <br/>
+>	numpages = {8}, <br/>
+>	url = {http://doi.acm.org/10.1145/3314111.3319829}, <br/>
+>	doi = {10.1145/3314111.3319829}, <br/>
+>	acmid = {3319829}, <br/>
+>	publisher = {ACM}, <br/>
+>	address = {New York, NY, USA}, <br/>
+>	keywords = {360{\${}^\circ\$} content, event detection, eye movement classification}, <br/>
+>} <br/>
+
 
 ## 4. REFERENCES
 
