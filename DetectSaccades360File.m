@@ -6,8 +6,8 @@
 %
 % input:
 %   inputfile   - ARFF file containing gaze coordinates
-%   outputfile  - ARFF file to store detected fixations
-%   outputAtt   - attribute that holds detected fixations in the output ARFF file
+%   outputfile  - ARFF file to store detected saccades
+%   outputAtt   - attribute that holds detected saccades in the output ARFF file
 %   typeOfMotion- 1 -> eye FOV, 2 -> eye+head
 %   paramfile   - (optional) txt file containing parameters for saccade detection (explanation below)
 %

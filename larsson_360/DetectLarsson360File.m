@@ -39,7 +39,7 @@ function DetectLarsson360File(inputfile, outputfile, outputAtt, typeOfMotion, pa
     c_sacc = 2;
     c_sp = 3;
     c_noise = 4;
-	attType = '{unassigned,fixation,saccade,sp,noise}';
+	attType = '{unassigned,fixation,saccade,SP,noise}';
 
     [data, metadata, attributes, relation, comments] = LoadArff(inputfile);
 
